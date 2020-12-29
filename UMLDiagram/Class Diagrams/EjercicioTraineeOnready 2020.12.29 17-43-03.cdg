@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EjercicioTraineeOnready">
+  <ClassDiagramComponents>
+    <Class name="EjercicioTraineeOnready" package="ejerciciotraineeonready" visibility="public" xPosition="535.0" yPosition="208.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Auto" package="model" visibility="public" xPosition="743.0" yPosition="984.0">
+      <Fields>
+        <Field name="puertas" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Modelo" name="modelo"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="puertas"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPuertas" returnType="int" visibility="public"/>
+        <Method name="setPuertas" returnType="void" visibility="public">
+          <Argument type="int" name="puertas"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Concesionaria" package="model" visibility="public" xPosition="47.0" yPosition="294.0">
+      <Fields>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="numero" type="int" visibility="private"/>
+        <Field name="vehiculos" type="ArrayList&lt;Vehiculo&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="descripcion"/>
+          <Argument type="int" name="numero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="getVehiculos" returnType="ArrayList&lt;Vehiculo&gt;" visibility="public"/>
+        <Method name="setVehiculos" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Vehiculo&gt;" name="vehiculos"/>
+        </Method>
+        <Method name="mostrarVehiculos" returnType="void" visibility="public"/>
+        <Method name="getVehiculoMasCaro" returnType="void" visibility="public"/>
+        <Method name="getVehiculoMasBarato" returnType="void" visibility="public"/>
+        <Method name="getVehiculoQueContieneEnModeloLetraY" returnType="void" visibility="public"/>
+        <Method name="mostrarVehiculosOrdenadosPorPrecioDeMayorAMenor" returnType="void" visibility="public"/>
+        <Method name="agregarVehiculo" returnType="void" visibility="public">
+          <Argument type="Vehiculo" name="v"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Marca" package="model" visibility="public" xPosition="1535.0" yPosition="116.0">
+      <Fields>
+        <Field name="descripcion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Modelo" package="model" visibility="public" xPosition="886.0" yPosition="88.0">
+      <Fields>
+        <Field name="marca" type="Marca" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Marca" name="marca"/>
+          <Argument type="String" name="descripcion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="Marca" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="Marca" name="marca"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Moto" package="model" visibility="public" xPosition="1117.0" yPosition="885.0">
+      <Fields>
+        <Field name="cilindrada" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Modelo" name="modelo"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="cilindrada"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCilindrada" returnType="int" visibility="public"/>
+        <Method name="setCilindrada" returnType="void" visibility="public">
+          <Argument type="int" name="cilindrada"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vehiculo" package="model" visibility="public" xPosition="846.0" yPosition="478.0">
+      <Fields>
+        <Field name="modelo" type="Modelo" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Modelo" name="modelo"/>
+          <Argument type="double" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getModelo" returnType="Modelo" visibility="public"/>
+        <Method name="setModelo" returnType="void" visibility="public">
+          <Argument type="Modelo" name="modelo"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="getDescripcionCompleta" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="marca" source="model.Modelo" target="model.Marca" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Concesionaria" target="model.Vehiculo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="model.Moto" target="model.Vehiculo"/>
+    <IsRelation name="is" source="model.Auto" target="model.Vehiculo"/>
+    <UseRelation source="model.Vehiculo" target="model.Modelo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="modelo" source="model.Vehiculo" target="model.Modelo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Modelo" target="model.Marca" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculos" source="model.Concesionaria" target="model.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Vehiculo&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
